@@ -3,6 +3,7 @@ package smoke;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -17,6 +18,7 @@ public class TestScript_001_Test {
 		driver.manage().window().maximize();
 		driver.get("https://demowebshop.tricentis.com/");
 		Thread.sleep(3000);
+		Reporter.log("hii",true);
 		driver.quit();
 	}
 }
